@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:cittel_app/models/models.dart';
-import 'package:cittel_app/widgets/widgets.dart';
+import 'package:cittel/models/models.dart';
+import 'package:cittel/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -120,7 +120,7 @@ class _HomePageState extends State<HomePage> {
       flexibleSpace: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            scale: 30,
+            scale: 25,
             image: AssetImage(
               'assets/images/header.png',
             ),
@@ -181,7 +181,7 @@ class _HomePageState extends State<HomePage> {
           ListTile(
             leading: const Icon(Icons.airplay),
             title: Text(
-              useEnglish ? 'Master Conferences' : 'Conferencias Magistrales',
+              useEnglish ? 'Keynote Speeches' : 'Conferencias Magistrales',
             ),
             onTap: () {
               setState(() {
@@ -205,7 +205,7 @@ class _HomePageState extends State<HomePage> {
           ListTile(
             leading: const Icon(Icons.people),
             title: Text(
-              useEnglish ? 'Lecturers' : 'Conferencistas',
+              useEnglish ? 'Speakers' : 'Conferencistas',
             ),
             onTap: () {
               setState(() {
